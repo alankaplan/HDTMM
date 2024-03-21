@@ -189,6 +189,6 @@ Kaplan, Alan D., Qi Cheng, Kadri Aditya Mohan, Lindsay D. Nelson, Sonia Jain, Ha
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 LLNL-CODE-861864
