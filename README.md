@@ -6,10 +6,10 @@ This code performs estimation of a mixture model over heterogeneous data types, 
 
 This code has been tested with Python 3.11.4 and the following packages:
 
-Package         Version
---------------- -------
 numpy           1.26.4
+
 pandas          2.2.1
+
 scipy           1.12.0
 
 ## Data Format
@@ -23,7 +23,7 @@ Run example.py to test your environment and the code. The example defines a mode
 
 The output is:
 
-'''
+```
 Sampling data ...
       var1       var2  var3       var4
 0        A   0.000000  <NA>   6.682195
@@ -178,7 +178,7 @@ Component #3
    mu          30.000  | 29.697
    sigma^2     100.000 | 100.704
 
-'''
+```
 
 ## Citation
 
