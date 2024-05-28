@@ -336,15 +336,16 @@ class hdtmm:
     def Mstep(self, data, w):
         self.params = _est_params(self.model_def, self.M, data, w)
 
-    def LL(self, data, P=None):
+    def LL(self, data, P=None, persample=False):
         if P is None:
             P = _probs(self.model_def, self.params, data)  # N x M x V
         P = np.sum(P, axis=2)
         P = P + np.log(self.params[0])
         Plse = np.array(_logsumexp(P))
-        P = np.sum(Plse)
-
-        return np.sum(Plse)
+        if persample:
+            return Plse
+        else:
+            return np.sum(Plse)
 
     def estimate(self, data, verbose=False, th=0.001, chkpnt=None, randstate=None):
         # data is a pandas dataframe
